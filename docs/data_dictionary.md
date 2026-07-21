@@ -1,7 +1,7 @@
 # Data Dictionary - IBM HR Analytics Dataset
 
 Source: Kaggle - IBM HR Analytics Employee Attrition & Performance
-Rows: 1,470 | Original columns: 35 | Columns after cleaning: 34
+Rows: 1470 | Original columns: 35 | Columns after cleaning: 34
 
 ---
 
