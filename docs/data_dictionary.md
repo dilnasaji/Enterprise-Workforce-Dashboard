@@ -17,9 +17,9 @@ Rows: 1,470 | Original columns: 35 | Columns after cleaning: 34
 
 | Column        | Value in every row | Reason removed            |
 |--------------|-------------------|---------------------------|
-| EmployeeCount | 1                 | Always 1 — meaningless    |
-| Over18        | Y                 | Always Y — meaningless    |
-| StandardHours | 80                | Always 80 — meaningless   |
+| EmployeeCount | 1                 | Always 1 - meaningless    |
+| Over18        | Y                 | Always Y - meaningless    |
+| StandardHours | 80                | Always 80 - meaningless   |
 
 ## Key Source Columns
 
@@ -34,10 +34,10 @@ Rows: 1,470 | Original columns: 35 | Columns after cleaning: 34
 | OverTime                | Text    | "Yes" or "No"                        |
 | YearsAtCompany          | Integer | Total tenure in years                |
 | YearsSinceLastPromotion | Integer | Years since last promotion           |
-| JobSatisfaction         | Integer | 1–4 scale (4 = highest)              |
-| EnvironmentSatisfaction | Integer | 1–4 scale                            |
-| WorkLifeBalance         | Integer | 1–4 scale                            |
-| RelationshipSatisfaction| Integer | 1–4 scale                            |
+| JobSatisfaction         | Integer | 1-4 scale (4 = highest)              |
+| EnvironmentSatisfaction | Integer | 1-4 scale                            |
+| WorkLifeBalance         | Integer | 1-4 scale                            |
+| RelationshipSatisfaction| Integer | 1-4 scale                            |
 | PerformanceRating       | Integer | 3 or 4 only in this dataset          |
 | EducationField          | Text    | 6 unique fields                      |
-| Education               | Integer | 1–5 scale (see EducationLabel)       |
+| Education               | Integer | 1-5 scale (see EducationLabel)       |
