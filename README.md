@@ -265,7 +265,7 @@ This is not just a Power BI lesson. It is the core BA principle applied to every
 ## About
 
 Built as a self-directed Business Analyst portfolio project to build real analytical skills and understand what enterprise BI work looks like in Financial Services, IT Consulting, and Management Advisory.
-[![LinkedIn](https://www.linkedin.com/in/dilna-saji/)
+[LinkedIn](https://www.linkedin.com/in/dilna-saji/)
 
 ---
 
