@@ -252,9 +252,20 @@ To test: **Modeling tab → View as → select a role** - the entire report filt
 
 ---
 
+## How to Use This Project
+
+1. **Download** `EnterpriseWorkforceIntelligence.pbix` from this repository
+2. **Open** in Power BI Desktop
+3. **Navigate** using the page tabs at the bottom or the navigation buttons on each page
+4. **Filter** using the Department slicer on each page to see firm-level data
+5. **Scenario model** - on the Financial Risk page, drag the **Replacement Cost slider** (1–12 months) to update the Attrition Cost Estimate in real time
+6. **Switch metrics** - on the Tech Workforce page, use the **Metric Selector tiles** to swap the scatter chart axis between 4 different measures
+7. **Dynamic ranking** - on the Strategic Advisory page, use the **Top N slider** to filter the bar chart to the highest-risk roles only
+8. **Test RLS** - Modeling tab → View as → select Manulife_View, CGI_View, or Deloitte_View
+
 ## The Critical Lesson
 
-**Build your assumptions last, not first. Validate thresholds against actual data distributions before writing a single line of logic around them.**
+**Build your assumptions last, not first.** **Validate thresholds against actual data distributions before writing a single line of logic around them**
 
 The SWITCH-based Attrition Risk Scorer initially returned identical output irrespective of which department was selected. The thresholds looked logical on paper - but were set below a level. After running column distribution analysis and recalibrating all four thresholds against actual values, the scorer became genuinely dynamic and analytically meaningful.
 
