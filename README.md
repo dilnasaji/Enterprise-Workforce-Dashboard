@@ -209,7 +209,7 @@ To test: **Modeling tab → View as → select a role** - the entire report filt
 
 ---
 
-### Phase 5 - Enterprise Optimisations (8 Upgrades)
+### Phase 5. Enterprise Optimisations (8 Upgrades)
 
 | # | Upgrade | Technique |
 |---|---|---|
