@@ -2,7 +2,7 @@
 ### Power BI Portfolio Project - Targeting Financial Services . IT Consulting . Management Advisory
 
 ## Project Overview 
-A fully governed, enterprise-grade **Workforce Analytics Dashboard** built entirely in Power BI Desktop. This was a self-directed skill-building project to understand what real Business Analysis work looks like in three major industry verticals, before stepping into those environments professionally.
+A fully governed, enterprise-grade **Workforce Analytics Dashboard** built entirely in Power BI Desktop. This was a self-directed skill-building project to understand what real Business Analysis work looks like in three major industry areas, before stepping into those environments professionally.
 
 The project transforms a raw 35-column IBM HR flat file into a structured, multi-stakeholder analytical system with three firm-targeted report pages, 20 production-ready DAX measures, Row-Level Security, and 8 advanced UX optimisations.
 
@@ -104,7 +104,7 @@ enterprise-workforce-intelligence-powerbi/
 - Marked `DimCalendar` as official Date Table
 - Renamed query to `FactEmployeeMetrics`
 
-**Key decision:** HireDate did not exist in the source data. Deriving it from tenure using a fixed reference date is a real-world pattern used when source systems only store tenure rather than timestamps.
+**Key decision:** HireDate did not exist in the source data. Developing it from tenure using a fixed reference date is a real-world pattern used when source systems only store tenure rather than timestamps.
 
 ---
 
@@ -120,7 +120,7 @@ enterprise-workforce-intelligence-powerbi/
 
 **Key decisions:**
 - Dimension tables created (not Duplicate) — stays linked to source, updates on refresh
-- **Single cross-filter direction** on all relationships - prevents ambiguous filter paths, enterprise standard
+- **Single cross-filter direction** on all relationships - prevents unclear filter paths, enterprise standard
 - All foreign key join columns **hidden from Report View** in both fact and dimension tables
 - **Auto Date/Time disabled** - removes Power BI's hidden auto-generated date tables, reduces model bloat.
 
@@ -141,7 +141,7 @@ All measures stored in a dedicated `_Measures` table (underscore prefix pins it 
 **Highlight measures:**
 
 **dax**
--- Dynamic risk classifier - thresholds calibrated against actual data distributions
+-- Dynamic risk classifier - thresholds adjusted on actual data distributions
 Attrition Risk Score =
 VAR AvgSatisfaction = AVERAGE(FactEmployeeMetrics[JobSatisfaction])
 VAR AvgWorkLife     = AVERAGE(FactEmployeeMetrics[WorkLifeBalance])
@@ -155,7 +155,7 @@ SWITCH(TRUE(),
     "🟢 Low Risk"
 )
 
- **Critical build note:** Initial thresholds (e.g., JobSatisfaction <= 2.0) caused the model to return static "Low Risk" output regardless of filter context - because the actual dataset average is 2.73. Thresholds were recalibrated against real column distributions before the model became functional. This is the most important lesson from the entire project.
+ **Critical build note:** Initial thresholds (e.g., JobSatisfaction <= 2.0) caused the model to return static "Low Risk" output regardless of filter context - because the actual dataset average is 2.73. Thresholds were adjusted to  real column distributions before the model became functional. This is the most important lesson from the entire project.
 
 -- Composite satisfaction score using AVERAGEX row-level iterator
 Satisfaction Index =
@@ -241,8 +241,8 @@ To test: **Modeling tab → View as → select a role** - the entire report filt
 
 | Decision | Why |
 |---|---|
-| `Reference` not `Duplicate` for dimension tables | Reference tables stay linked to source - changes propagate on refresh |
-| Single cross-filter direction on all relationships | Prevents ambiguous filter paths - enterprise BI standard |
+| `Reference` not `Duplicate` for dimension tables | Reference tables are linked to source - changes reproduced on refresh |
+| Single cross-filter direction on all relationships | Prevents vague filter paths - enterprise BI standard |
 | `DIVIDE()` instead of `/` in all ratio measures | Returns 0 instead of error when denominator is zero |
 | `VAR` pattern in all multi-step measures | Improves readability, prevents repeated calculation, production DAX standard |
 | `_Measures` table with underscore prefix | Alphabetical pinning to top of Data pane — governance best practice |
@@ -265,7 +265,7 @@ This is not just a Power BI lesson. It is the core BA principle applied to every
 ## About
 
 Built as a self-directed Business Analyst portfolio project to build real analytical skills and understand what enterprise BI work looks like in Financial Services, IT Consulting, and Management Advisory.
-LinkedIn: https://www.linkedin.com/in/dilna-saji/
+[![LinkedIn](https://www.linkedin.com/in/dilna-saji/)
 
 ---
 
